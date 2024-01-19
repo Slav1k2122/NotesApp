@@ -1,0 +1,150 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 160px;
+}
+
+.menu{
+    width: 25px;
+}
+
+.notes{
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.write_note{
+    margin: 0 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapp_notes{
+    margin: 0 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapp_note{
+    display: flex;
+    align-items: center;
+    animation: smooth_appear 1s ease-in-out 1 forwards;
+}
+
+@keyframes smooth_appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.ok{
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.delete{
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.note{
+    height: 50px;
+    width: 250px;
+    background-color: #970FF2;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+p{
+    margin-left: 10px;
+    font-family: monospace;
+}
+
+.inp_note{
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+@media (max-width: 700px) {
+    header{
+        margin: 0 100px;
+    }
+
+    .write_note{
+        margin: 0 100px;
+    }
+    
+    .wrapp_notes{
+        margin: 0 100px;
+    }
+}
+
+@media (max-width: 560px) {
+    header{
+        margin: 0 60px;
+    }
+
+    .write_note{
+        margin: 0 60px;
+    }
+    
+    .wrapp_notes{
+        margin: 0 60px;
+    }
+}
+
+@media (max-width: 470px) {
+    .note{
+        height: 45px;
+        width: 220px;
+        border-radius: 8px;
+    }
+
+    .inp_note{
+        height: 40px;
+        width: 210px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 420px) {
+    .ok{
+        margin: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .delete{
+        margin: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    header{
+        margin: 0 40px;
+    }
+
+    .write_note{
+        margin: 0 40px;
+    }
+    
+    .wrapp_notes{
+        margin: 0 40px;
+    }
+}
